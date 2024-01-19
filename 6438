@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+class calculator
+{
+    int a,b,rs;
+    public:
+    void readdata()
+    {
+        cout<<"enter first number";
+        cin>>a;
+        cout<<"enter second number";
+        cin>>b;
+    }
+    void add()
+    {
+        void readdata();
+        rs=a+b;
+         cout<<"\t sum\t"<<rs;
+    }
+    void subtract()
+    {
+        void readdata();
+        rs=a-b;
+        cout<<"\t subtraction\t"<<rs;
+    }
+    void multiply()
+    {
+        void readdata();
+       rs=a*b;
+        cout<<"\t multiplication\t"<<rs;
+    }
+    void division()
+    {
+        void readdata();
+        rs=a/b;
+        cout<<"\t division\t"<<rs;;
+    }
+};
+int main()
+{
+    class calculator c1;
+    c1.readdata();
+    c1.add();
+    c1.subtract();
+    c1.multiply();
+    c1.division();
+    return 0;
+}
